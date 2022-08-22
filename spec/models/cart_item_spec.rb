@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Cart, type: :model do
+RSpec.describe CartItem, type: :model do
   let(:p1) { create(:product, price: 10) }
   let(:p2) { create(:product, price: 20) }
   let(:cart) { Cart.new }

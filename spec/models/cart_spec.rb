@@ -34,7 +34,6 @@ RSpec.describe Cart, type: :model do
 
     expect(cart.items.first.product).to be_a Product
     expect(cart.items.first.product.price).to be 10
-
   end
 
   it "聖誕節全面打 9 折。" do
@@ -62,7 +61,6 @@ RSpec.describe Cart, type: :model do
   it "將購物車內容轉換成 Hash 並存到 session 裡" do
     3.times { cart.add(p1.id)}
     2.times { cart.add(p2.id)}
-
 
     expect(cart.to_hash).to eq cart_hash
   end

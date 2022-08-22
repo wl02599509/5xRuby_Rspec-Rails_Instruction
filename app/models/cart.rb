@@ -45,7 +45,7 @@ class Cart
   def total_price
     total = @items.reduce(0) { |acc, cv| acc + cv.total_price}
     
-    if is_Xmas?
+    if is_xmas?
       total = total * 0.9
     end
 
@@ -57,7 +57,7 @@ class Cart
   end
 
   private
-  def is_Xmas?
+  def is_xmas?
     Time.now.month == 12 && [24, 25].include?(Time.now.day)
   end
 end
