@@ -58,3 +58,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :develop, :test do
   gem 'rspec-rails', '~> 5.0', '>= 5.0.2'
 end
+
+gem 'net-smtp', '~> 0.2.1'
+
+group :develop, :test do
+  gem "factory_bot_rails", "~> 6.2"
+end
+
+
